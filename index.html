@@ -3,352 +3,174 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Terms and Conditions</title>
+    <title>Terms and Conditions - Vaultara</title>
     <style>
         :root {
             --bg-color: #FFFFFF;
-            --text-color: #333333;
+            --text-color: #212121;
             --text-secondary: #555555;
             --heading-color: #1565C0;
             --heading2-color: #1976D2;
+            --heading3-color: #1E88E5;
             --highlight-bg: #E3F2FD;
-            --highlight-text: #333333;
+            --highlight-text: #0D47A1;
             --highlight-strong: #1565C0;
             --warning-bg: #FFF3E0;
-            --warning-text: #333333;
-            --warning-strong: #E65100;
-            --date-color: #757575;
-            --border-color: #E0E0E0;
-            --table-header-bg: #E3F2FD;
+            --warning-text: #E65100;
+            --warning-strong: #BF360C;
+            --table-header-bg: #F5F7FA;
             --table-header-text: #1565C0;
             --table-border: #E0E0E0;
-            --table-text: #555555;
+            --table-text: #424242;
+            --date-color: #757575;
         }
 
         @media (prefers-color-scheme: dark) {
             :root {
-                --bg-color: #1A1C1E;
-                --text-color: #E2E2E6;
-                --text-secondary: #C3C6CF;
+                --bg-color: #121212;
+                --text-color: #E0E0E0;
+                --text-secondary: #B0B0B0;
                 --heading-color: #90CAF9;
-                --heading2-color: #90CAF9;
-                --highlight-bg: #1E3A5F;
-                --highlight-text: #E2E2E6;
+                --heading2-color: #64B5F6;
+                --heading3-color: #42A5F5;
+                --highlight-bg: #0D274D;
+                --highlight-text: #BBDEFB;
                 --highlight-strong: #90CAF9;
                 --warning-bg: #3E2723;
                 --warning-text: #FFE0B2;
                 --warning-strong: #FFB74D;
-                --date-color: #B0B3BC;
-                --border-color: #43474E;
-                --table-header-bg: #1E3A5F;
+                --table-header-bg: #1E1E1E;
                 --table-header-text: #90CAF9;
-                --table-border: #43474E;
-                --table-text: #C3C6CF;
+                --table-border: #333333;
+                --table-text: #CCCCCC;
+                --date-color: #9E9E9E;
             }
         }
 
-        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; padding: 16px; line-height: 1.8; color: var(--text-color); background-color: var(--bg-color); }
-        h1 { color: var(--heading-color); font-size: 22px; }
-        h2 { color: var(--heading2-color); font-size: 18px; margin-top: 20px; }
-        p { margin: 8px 0; font-size: 14px; color: var(--text-color); }
-        ul { padding-left: 20px; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            padding: 16px;
+            line-height: 1.7;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+        }
+        h1 { color: var(--heading-color); font-size: 24px; margin-bottom: 4px; }
+        h2 { color: var(--heading2-color); font-size: 19px; margin-top: 24px; border-bottom: 1px solid var(--table-border); padding-bottom: 6px; }
+        h3 { color: var(--heading3-color); font-size: 16px; margin-top: 18px; }
+        p { margin: 8px 0; font-size: 14px; }
+        ul { padding-left: 22px; margin: 8px 0; }
         li { margin: 6px 0; font-size: 14px; color: var(--text-secondary); }
-        strong { color: var(--text-color); }
-        .highlight { background-color: var(--highlight-bg); padding: 14px; border-radius: 10px; margin: 14px 0; color: var(--highlight-text); border-left: 4px solid var(--heading-color); }
-        .highlight p { color: var(--highlight-text); }
-        .highlight strong { color: var(--highlight-strong); }
-        .warning { background-color: var(--warning-bg); padding: 14px; border-radius: 10px; margin: 14px 0; color: var(--warning-text); border-left: 4px solid var(--warning-strong); }
-        .warning p { color: var(--warning-text); }
-        .warning strong { color: var(--warning-strong); }
-        .date { color: var(--date-color); font-size: 12px; }
-        table { width: 100%; border-collapse: collapse; margin: 14px 0; }
-        th { padding: 10px 12px; text-align: left; border-bottom: 2px solid var(--table-border); font-size: 13px; background-color: var(--table-header-bg); color: var(--table-header-text); font-weight: bold; }
+        strong { color: var(--text-color); font-weight: 600; }
+        .highlight { background-color: var(--highlight-bg); padding: 14px 16px; border-radius: 10px; margin: 14px 0; border-left: 4px solid var(--highlight-strong); }
+        .highlight p { color: var(--highlight-text); margin: 0; }
+        .warning { background-color: var(--warning-bg); padding: 14px 16px; border-radius: 10px; margin: 14px 0; border-left: 4px solid var(--warning-strong); }
+        .warning p { color: var(--warning-text); margin: 0; }
+        .date { color: var(--date-color); font-size: 12px; margin-bottom: 16px; }
+        table { width: 100%; border-collapse: collapse; margin: 16px 0; }
+        th { padding: 10px 12px; text-align: left; border-bottom: 2px solid var(--table-border); font-size: 13px; background-color: var(--table-header-bg); color: var(--table-header-text); font-weight: 600; }
         td { padding: 10px 12px; text-align: left; border-bottom: 1px solid var(--table-border); font-size: 13px; color: var(--table-text); }
+        a { color: var(--heading-color); text-decoration: none; }
+        a:hover { text-decoration: underline; }
     </style>
 </head>
 <body>
 <h1>📋 Terms and Conditions</h1>
-<p class="date">Last Updated: March 2025</p>
+<p class="date">Last Updated: September 2026</p>
 
-<p>Welcome to <strong>Vaultara</strong>. By downloading, installing, or using this application, you agree to the following terms and conditions.</p>
+<p>Welcome to <strong>Vaultara</strong>. By downloading, installing, accessing, or using this application, you agree to comply with and be bound by these Terms and Conditions. If you do not agree to these terms, please do not use the application.</p>
 
 <h2>1. Acceptance of Terms</h2>
-<p>By accessing or using Vaultara, you acknowledge that you have read, understood, and agree to be bound by these Terms and Conditions. If you do not agree, please do not use the app.</p>
+<p>These Terms and Conditions constitute a legally binding agreement between you and <strong>CyclusHub</strong> ("we", "us", or "our"). We reserve the right to revise or update these terms at any time. Continued use of Vaultara after any changes indicates your agreement to the modified terms.</p>
 
 <h2>2. Description of Service</h2>
-<p>Vaultara is a personal document management and reminder application that allows you to:</p>
+<p>Vaultara is an offline-first personal management and reminder platform that provides:</p>
 <ul>
-    <li>Store and manage personal documents with images</li>
-    <li>Set expiry date reminders for documents</li>
-    <li>Set medicine intake reminders with alarm notifications</li>
-    <li>Export and import encrypted backups (plan-dependent)</li>
-    <li>Generate PDF reports of stored data (Premium plan)</li>
-    <li>Secure the app with biometric authentication (Premium plan)</li>
+    <li><strong>Document Vault:</strong> Secure local storage of personal documents, IDs, and cards with image attachment, cropping, rotation, and viewing capabilities.</li>
+    <li><strong>Expiry Reminders:</strong> Automated tracking of document, passport, warranty, license, and product expirations, sorted by urgency with multi-stage notifications (30, 15, 7, 3, 2, and 1 days before expiry at 10:00 AM local time).</li>
+    <li><strong>Medicine Reminders:</strong> Scheduling of medication intake with alarm-level notifications, customizable category sounds, and snooze features.</li>
+    <li><strong>Subscription Reminders:</strong> Management and tracking of recurring subscriptions (streaming, utilities, memberships, software licenses) with automatic renewal calculation, sorted by days left, and multi-stage renewal notifications.</li>
+    <li><strong>Data Protection &amp; Backup:</strong> AES-256 encrypted manual export and import (<code>.vaultara</code>), as well as automated Google Drive Cloud Sync for upgraded tiers.</li>
+    <li><strong>Tools &amp; Security:</strong> PDF export, document sharing, custom notification sounds for each category, and Biometric Lock (Fingerprint/Face).</li>
 </ul>
 
-<h2>3. Plans & In-App Purchases</h2>
-<p>Vaultara offers three tiers of service:</p>
+<h2>3. Plans, Subscriptions, and In-App Purchases</h2>
+<p>Vaultara offers a free tier alongside optional monthly subscriptions and a lifetime purchase tier:</p>
+
 <table>
-    <tr><th>Plan</th><th>Price</th><th>Payment Type</th></tr>
-    <tr><td>Free</td><td>₹0</td><td>No payment required</td></tr>
-    <tr><td>Basic</td><td>₹149</td><td>One-time payment (lifetime)</td></tr>
-    <tr><td>Premium</td><td>₹299</td><td>One-time payment (lifetime)</td></tr>
+    <tr><th>Plan Tier</th><th>Pricing (USD Base)*</th><th>Billing Type</th><th>Key Features</th></tr>
+    <tr>
+        <td><strong>Free</strong></td>
+        <td>$0.00</td>
+        <td>Free Forever</td>
+        <td>5 documents, 5 expiries, 5 medicines, 1 subscription, 5 photos/item, 2 dose times. Ad-supported.</td>
+    </tr>
+    <tr>
+        <td><strong>Basic</strong></td>
+        <td>$0.51 / month</td>
+        <td>Monthly Subscription</td>
+        <td>25 documents, 25 expiries, 25 medicines, 5 subscriptions, 15 photos/item, 5 dose times. 100% Ad-Free, Encrypted Backup Export/Import.</td>
+    </tr>
+    <tr>
+        <td><strong>Premium</strong></td>
+        <td>$1.03 / month</td>
+        <td>Monthly (7-Day Free Trial)</td>
+        <td>Unlimited everything, Google Drive Cloud Auto-Sync, Biometric Lock, PDF Export, Custom Category Sounds, 100% Ad-Free.</td>
+    </tr>
+    <tr>
+        <td><strong>Lifetime</strong></td>
+        <td>$12.51 one-time</td>
+        <td>One-Time Payment</td>
+        <td>All Premium features forever with no recurring monthly payments and all future updates included.</td>
+    </tr>
 </table>
+<p class="date">* Prices are converted in real time by Google Play Console into your local currency (e.g., INR, EUR, GBP, AUD, CAD) based on prevailing exchange rates and applicable regional taxes.</p>
 
-<h3>3.1 Purchase Terms</h3>
+<h3>3.1 Free Trial Terms (Premium Monthly)</h3>
 <ul>
-    <li>All purchases are <strong>one-time payments</strong> — there are no subscriptions or recurring charges</li>
-    <li>Purchases are processed through Google Play Billing and are subject to Google Play's terms</li>
-    <li>Features unlocked by a purchase are available for the lifetime of the app</li>
-    <li>Prices may vary by region and are displayed in your local currency on Google Play</li>
+    <li>The Premium Monthly plan includes a <strong>7-Day Free Trial</strong>.</li>
+    <li>You will not be charged during the trial period.</li>
+    <li>If you do not cancel at least 24 hours before the 7-day trial concludes, Google Play will automatically convert your trial into a monthly recurring subscription at the stated rate.</li>
 </ul>
 
-<h3>3.2 Refund Policy</h3>
+<h3>3.2 Subscription Billing &amp; Cancellation</h3>
 <ul>
-    <li>Refund requests within 48 hours of purchase can be made through Google Play</li>
-    <li>For refund requests after 48 hours, contact us at cyclushub@gmail.com</li>
-    <li>Refunds are handled at our discretion and in accordance with Google Play's refund policy</li>
-    <li>If a refund is granted, the associated premium features will be revoked</li>
+    <li>Subscriptions automatically renew every month unless canceled through the Google Play Store at least 24 hours prior to the renewal date.</li>
+    <li><strong>How to Cancel:</strong> Open the Google Play Store app &gt; Tap your Profile Icon &gt; <em>Payments &amp; Subscriptions</em> &gt; <em>Subscriptions</em> &gt; Select <em>Vaultara</em> &gt; Tap <em>Cancel Subscription</em>.</li>
+    <li>Upon cancellation, you retain full access to all plan features until the end of your current paid billing period.</li>
 </ul>
 
-<div class="highlight">
-    <p><strong>💡 Note:</strong> Upgrading from Basic to Premium is a separate purchase. The Basic plan price is not deducted from the Premium price.</p>
-</div>
+<h3>3.3 Legacy Plan Grandfathering</h3>
+<p>Users who previously purchased older one-time plans retain their grandfathered access to all features included under their original plan terms.</p>
 
-<h2>4. Advertisements</h2>
+<h3>3.4 Refunds</h3>
+<p>All in-app purchases and subscriptions are handled exclusively by Google Play. Refund requests are subject to <a href="https://support.google.com/googleplay/answer/2479637" style="color: var(--heading-color);">Google Play's Refund Policy</a>. You can submit a refund request directly through your Google Play account history within 48 hours of purchase.</p>
+
+<h2>4. User Responsibilities</h2>
 <ul>
-    <li>Free plan users will see advertisements (banner and interstitial ads) powered by Google AdMob</li>
-    <li>Interstitial ads are rate-limited and will not appear excessively</li>
-    <li>Basic and Premium plan users enjoy a completely ad-free experience</li>
-    <li>Ad content is provided by Google and is subject to Google's advertising policies</li>
+    <li><strong>Backup Management:</strong> Because Vaultara operates offline-first, you are responsible for maintaining backups of your data by using the Export feature or activating Google Drive Cloud Sync.</li>
+    <li><strong>Device &amp; Battery Settings:</strong> To ensure medicine alarms and expiry notifications trigger reliably, you must grant necessary system permissions (Notifications, Alarms) and ensure your device does not restrict Vaultara under aggressive battery optimization settings.</li>
+    <li><strong>Accuracy:</strong> You are solely responsible for verifying the accuracy of medicine schedules, dose times, expiry dates, and subscription renewal information entered into the app.</li>
 </ul>
 
-<h2>5. User Data & Privacy</h2>
-<div class="highlight">
-    <p><strong>🔒 Your data stays on your device.</strong> Vaultara is an offline application. We do not collect, transmit, or store any of your personal data on external servers.</p>
-</div>
-<ul>
-    <li>All documents, images, and reminders are stored locally on your device</li>
-    <li>Backup files are encrypted using AES-256 encryption</li>
-    <li>We do not have access to your data at any time</li>
-    <li>Third-party services (Google AdMob, Google Play Billing) have their own privacy policies</li>
-</ul>
-<p>For full details, please read our <strong>Privacy Policy</strong>.</p>
-
-<h2>6. Feature Availability</h2>
-<p>Certain features are restricted based on your plan:</p>
-<ul>
-    <li><strong>Biometric Lock:</strong> Premium plan only</li>
-    <li><strong>PDF Export:</strong> Premium plan only</li>
-    <li><strong>Data Backup (Export):</strong> Basic and Premium plans</li>
-    <li><strong>Data Restore (Import):</strong> Premium plan only</li>
-    <li><strong>Ad-Free Experience:</strong> Basic and Premium plans</li>
-</ul>
-<p>Free plan users will see an upgrade prompt when attempting to access restricted features.</p>
-
-<h2>7. User Responsibilities</h2>
-<p>You are responsible for:</p>
-<ul>
-    <li>Maintaining the security of your device and app data</li>
-    <li>Creating regular backups of your data (if on a paid plan)</li>
-    <li>Ensuring the accuracy of reminder times and expiry dates</li>
-    <li>Not using the app for any illegal or unauthorized purpose</li>
-    <li>Not attempting to bypass, modify, or circumvent the app's plan restrictions or purchase system</li>
-</ul>
-
-<h2>8. Medical Disclaimer</h2>
+<h2>5. Medical Disclaimer</h2>
 <div class="warning">
-    <p><strong>⚕️ Important:</strong> Vaultara is NOT a medical application. Medicine reminders are provided as a convenience tool only. Always consult your healthcare provider for medical advice. We are not liable for any missed medications or health-related consequences.</p>
+    <p><strong>⚕️ IMPORTANT MEDICAL NOTICE:</strong> Vaultara is an organizational tool intended for personal scheduling and convenience. It is <strong>NOT</strong> a certified medical device, medical diagnostic tool, or substitute for professional medical care. Never alter, initiate, or discontinue medication dosages based solely on app reminders. Always follow the explicit instructions of your qualified healthcare provider. CyclusHub disclaims all liability for any missed doses, incorrect dosage entries, or adverse health outcomes.</p>
 </div>
 
-<h2>9. Intellectual Property</h2>
-<p>All content, design, and code of Vaultara are the intellectual property of CyclusHub. You may not reproduce, distribute, reverse engineer, or create derivative works without prior written consent.</p>
+<h2>6. Financial &amp; Expiry Disclaimer</h2>
+<p>Expiry and Subscription reminders are provided as a personal tracking aid. CyclusHub shall not be held liable for any penalties, financial losses, cancellation fees, expired warranties, or missed service renewals resulting from app usage or device notification failures.</p>
 
-<h2>10. Limitation of Liability</h2>
-<p>Vaultara is provided "as is" without any warranties. We shall not be liable for:</p>
-<ul>
-    <li>Data loss due to device failure, app uninstallation, or failure to backup</li>
-    <li>Missed reminders due to device settings, battery optimization, or OS restrictions</li>
-    <li>Any indirect, incidental, or consequential damages</li>
-    <li>Issues related to Google Play Billing or payment processing</li>
-    <li>Content displayed in third-party advertisements</li>
-</ul>
+<h2>7. Intellectual Property</h2>
+<p>All intellectual property rights, trademarks, software code, UI designs, and visual branding associated with Vaultara belong exclusively to CyclusHub. You may not reverse-engineer, decompile, distribute, or modify the application without prior written permission.</p>
 
-<h2>11. Updates and Changes</h2>
-<p>We reserve the right to:</p>
-<ul>
-    <li>Modify these terms at any time</li>
-    <li>Update plan features, limits, or pricing for new purchases</li>
-    <li>Release app updates with new features or bug fixes</li>
-</ul>
-<p>Continued use of the app after changes constitutes acceptance of the new terms. Existing purchases will not be affected by price changes.</p>
+<h2>8. Limitation of Liability</h2>
+<p>To the maximum extent permitted by applicable law, Vaultara is provided on an "AS IS" and "AS AVAILABLE" basis without warranties of any kind. In no event shall CyclusHub be liable for any indirect, incidental, special, consequential, or punitive damages, including data loss, hardware failure, or service interruptions.</p>
 
-<h2>12. Termination</h2>
-<p>You may stop using the app at any time by uninstalling it. All locally stored data will be deleted upon uninstallation unless backed up. Your purchase history remains on your Google Play account.</p>
-
-<h2>13. Governing Law</h2>
-<p>These Terms shall be governed by and construed in accordance with the laws of India, without regard to conflict of law principles.</p>
-
-<h2>14. Contact Us</h2>
-<p>If you have any questions about these Terms, please contact us at:</p>
-<p><strong>Email:</strong> cyclushub@gmail.com</p>
+<h2>9. Contact Information</h2>
+<p>If you have any questions or require support regarding these Terms and Conditions, please contact us at:</p>
 <p><strong>Developer:</strong> CyclusHub</p>
+<p><strong>Email:</strong> <a href="mailto:cyclushub@gmail.com">cyclushub@gmail.com</a></p>
 
-<p class="date">© 2025 CyclusHub. All rights reserved.</p>
+<p class="date">© 2026 CyclusHub. All rights reserved.</p>
 </body>
 </html>
-
-
-
-<!--<!DOCTYPE html>-->
-<!--<html lang="en">-->
-<!--<head>-->
-<!--    <meta charset="UTF-8">-->
-<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
-<!--    <title>Terms and Conditions</title>-->
-<!--    <style>-->
-<!--        :root {-->
-<!--            &#45;&#45;bg-color: #FFFFFF;-->
-<!--            &#45;&#45;text-color: #333333;-->
-<!--            &#45;&#45;text-secondary: #555555;-->
-<!--            &#45;&#45;heading-color: #1565C0;-->
-<!--            &#45;&#45;heading2-color: #1976D2;-->
-<!--            &#45;&#45;highlight-bg: #E3F2FD;-->
-<!--            &#45;&#45;highlight-text: #333333;-->
-<!--            &#45;&#45;date-color: #757575;-->
-<!--            &#45;&#45;border-color: #E0E0E0;-->
-<!--        }-->
-
-<!--        @media (prefers-color-scheme: dark) {-->
-<!--            :root {-->
-<!--                &#45;&#45;bg-color: #1A1C1E;-->
-<!--                &#45;&#45;text-color: #E2E2E6;-->
-<!--                &#45;&#45;text-secondary: #C3C6CF;-->
-<!--                &#45;&#45;heading-color: #90CAF9;-->
-<!--                &#45;&#45;heading2-color: #90CAF9;-->
-<!--                &#45;&#45;highlight-bg: #1E3A5F;-->
-<!--                &#45;&#45;highlight-text: #E2E2E6;-->
-<!--                &#45;&#45;date-color: #B0B3BC;-->
-<!--                &#45;&#45;border-color: #43474E;-->
-<!--            }-->
-<!--        }-->
-
-<!--        body {-->
-<!--            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;-->
-<!--            padding: 16px;-->
-<!--            line-height: 1.8;-->
-<!--            color: var(&#45;&#45;text-color);-->
-<!--            background-color: var(&#45;&#45;bg-color);-->
-<!--        }-->
-<!--        h1 {-->
-<!--            color: var(&#45;&#45;heading-color);-->
-<!--            font-size: 22px;-->
-<!--        }-->
-<!--        h2 {-->
-<!--            color: var(&#45;&#45;heading2-color);-->
-<!--            font-size: 18px;-->
-<!--            margin-top: 20px;-->
-<!--        }-->
-<!--        p {-->
-<!--            margin: 8px 0;-->
-<!--            font-size: 14px;-->
-<!--            color: var(&#45;&#45;text-color);-->
-<!--        }-->
-<!--        ul {-->
-<!--            padding-left: 20px;-->
-<!--        }-->
-<!--        li {-->
-<!--            margin: 6px 0;-->
-<!--            font-size: 14px;-->
-<!--            color: var(&#45;&#45;text-secondary);-->
-<!--        }-->
-<!--        strong {-->
-<!--            color: var(&#45;&#45;text-color);-->
-<!--        }-->
-<!--        .highlight {-->
-<!--            background-color: var(&#45;&#45;highlight-bg);-->
-<!--            padding: 14px;-->
-<!--            border-radius: 10px;-->
-<!--            margin: 14px 0;-->
-<!--            color: var(&#45;&#45;highlight-text);-->
-<!--            border-left: 4px solid var(&#45;&#45;heading-color);-->
-<!--        }-->
-<!--        .highlight p {-->
-<!--            color: var(&#45;&#45;highlight-text);-->
-<!--        }-->
-<!--        .highlight strong {-->
-<!--            color: var(&#45;&#45;heading-color);-->
-<!--        }-->
-<!--        .date {-->
-<!--            color: var(&#45;&#45;date-color);-->
-<!--            font-size: 12px;-->
-<!--        }-->
-<!--    </style>-->
-<!--</head>-->
-<!--<body>-->
-<!--<h1>📋 Terms and Conditions</h1>-->
-<!--<p class="date">Last Updated: March 2026</p>-->
-
-<!--<p>Welcome to <strong>Vaultara</strong>. By downloading, installing, or using this application, you agree to the following terms and conditions.</p>-->
-
-<!--<h2>1. Acceptance of Terms</h2>-->
-<!--<p>By accessing or using Vaultara, you acknowledge that you have read, understood, and agree to be bound by these Terms and Conditions. If you do not agree, please do not use the app.</p>-->
-
-<!--<h2>2. Description of Service</h2>-->
-<!--<p>Vaultara is a personal document management and reminder application that allows you to:</p>-->
-<!--<ul>-->
-<!--    <li>Store and manage personal documents with images</li>-->
-<!--    <li>Set expiry date reminders for documents</li>-->
-<!--    <li>Set medicine intake reminders with alarm notifications</li>-->
-<!--    <li>Export and import encrypted backups</li>-->
-<!--    <li>Generate PDF reports of stored data</li>-->
-<!--</ul>-->
-
-<!--<h2>3. User Data & Privacy</h2>-->
-<!--<div class="highlight">-->
-<!--    <p><strong>🔒 Your data stays on your device.</strong> Vaultara is an offline application. We do not collect, transmit, or store any of your personal data on external servers.</p>-->
-<!--</div>-->
-<!--<ul>-->
-<!--    <li>All documents, images, and reminders are stored locally on your device.</li>-->
-<!--    <li>Backup files are encrypted using AES-256 encryption.</li>-->
-<!--    <li>We do not have access to your data at any time.</li>-->
-<!--</ul>-->
-
-<!--<h2>4. User Responsibilities</h2>-->
-<!--<p>You are responsible for:</p>-->
-<!--<ul>-->
-<!--    <li>Maintaining the security of your device and app data.</li>-->
-<!--    <li>Creating regular backups of your data.</li>-->
-<!--    <li>Ensuring the accuracy of reminder times and expiry dates.</li>-->
-<!--    <li>Not using the app for any illegal or unauthorized purpose.</li>-->
-<!--</ul>-->
-
-<!--<h2>5. Medical Disclaimer</h2>-->
-<!--<div class="highlight">-->
-<!--    <p><strong>⚕️ Important:</strong> Vaultara is NOT a medical application. Medicine reminders are provided as a convenience tool only. Always consult your healthcare provider for medical advice. We are not liable for any missed medications or health-related consequences.</p>-->
-<!--</div>-->
-
-<!--<h2>6. Intellectual Property</h2>-->
-<!--<p>All content, design, and code of Vaultara are the intellectual property of CyclusHub. You may not reproduce, distribute, or create derivative works without prior written consent.</p>-->
-
-<!--<h2>7. Limitation of Liability</h2>-->
-<!--<p>Vaultara is provided "as is" without any warranties. We shall not be liable for:</p>-->
-<!--<ul>-->
-<!--    <li>Data loss due to device failure or app uninstallation</li>-->
-<!--    <li>Missed reminders due to device settings or battery optimization</li>-->
-<!--    <li>Any indirect, incidental, or consequential damages</li>-->
-<!--</ul>-->
-
-<!--<h2>8. Updates and Changes</h2>-->
-<!--<p>We reserve the right to modify these terms at any time. Continued use of the app after changes constitutes acceptance of the new terms.</p>-->
-
-<!--<h2>9. Termination</h2>-->
-<!--<p>You may stop using the app at any time by uninstalling it. All locally stored data will be deleted upon uninstallation unless backed up.</p>-->
-
-<!--<h2>10. Contact Us</h2>-->
-<!--<p>If you have any questions about these Terms, please contact us at:</p>-->
-<!--<p><strong>Email:</strong> cyclushub@gmail.com</p>-->
-
-<!--<p class="date">© 2025 CyclusHub. All rights reserved.</p>-->
-<!--</body>-->
-<!--</html>-->
